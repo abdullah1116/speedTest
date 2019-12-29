@@ -1,0 +1,33 @@
+<head>
+    <link rel="stylesheet" href="mybootstrap.css" />
+</head>
+
+<body class="body">
+    <div style="position: absolute; width: 100%;">
+        <div class="col-md-8 col-lg-6 btn_modal">
+            <nav class="navbar navbar-xs navbar-expand ">
+                <span id="showResult" class="navbar-text">Wait...</span>
+                <div class="navbar-collapse"></div>
+                <div class="btn-group " role="group">
+                    <button type="button" class="btn btn-sm btn-dark" onclick="getResult()">✔ Add Value</button>
+                    <button type="button" class="btn btn-sm btn-dark" onclick="clearResult()">❌ Clear</button>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+
+
+    <div class="result_modal">
+        <div style="font-size: 350%;float: left;" id="Result_big"></div>
+        <div style="float: right;bottom: 0px;" id="Result_small"></div>
+    </div>
+
+    <div class="bg">
+        <object class="object" id="ImageObject" onload="result()"></object>
+        <img class="object" id="Imagenoload" onload="Imageonload()" style="display: block;">
+    </div>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+</body>
