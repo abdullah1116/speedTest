@@ -1,16 +1,16 @@
+document.getElementById("background").style.display = "none"
 var t1,
     avgArray = [],
     imgsrcset;
 
-getResult()
-
-function getResult() {
-    document.getElementById("Imagenoload").style.display = "none"
-    document.getElementById("ImageObject").innerHTML = ""
-    document.getElementById("showResult").textContent = "Wait..."
-    t1 = performance.now()
-    load()
-}
+setTimeout(
+    function getResult() {
+        document.getElementById("Imagenoload").style.display = "none"
+        document.getElementById("ImageObject").innerHTML = ""
+        document.getElementById("showResult").textContent = "Wait..."
+        t1 = performance.now()
+        load()
+    }, 1000);
 
 function load() {
     document.getElementById("ImageObject").data = "image.svg"
