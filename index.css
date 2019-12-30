@@ -53,3 +53,21 @@ a:hover {
     color: #0078d7;
     cursor: pointer;
 }
+
+#background {
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    display: block;
+    position: relative;
+}
+
+#spinnerborder {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0%;
+    margin: auto;
+}

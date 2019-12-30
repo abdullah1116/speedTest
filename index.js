@@ -25,8 +25,7 @@ function result() {
     }
 
     document.getElementById("showResult").textContent = Math.round(timeresult) / 1000 + " Seconds (" + avgArray.length + " avg)"
-    document.getElementById("Result_big").textContent = Math.round(timeresult / 1000)
-    document.getElementById("Result_small").textContent = Math.round(timeresult) / 1000
+    document.getElementById("Result").textContent = Math.round(timeresult) / 1000
 
 
     if (imgsrcset == true) {

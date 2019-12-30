@@ -1,12 +1,12 @@
 <head>
     <link rel="stylesheet" href="mybootstrap.css" />
+    <script src="index.js"></script>
 </head>
-<div id="background" style="
-height: 100%;
-width: 100%;
-background-color: #222;
-display: block;
-">
+
+<div id="background" class="text-center">
+    <div id="spinnerborder">
+        <div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>
+    </div>
 </div>
 
 <body class="body">
@@ -26,8 +26,7 @@ display: block;
 
 
     <div class="result_modal">
-        <div style="font-size: 350%;float: left;" id="Result_big"></div>
-        <div style="float: right;bottom: 0px;" id="Result_small"></div>
+        <div style="font-size: 350%;float: left;" id="Result"></div>
     </div>
 
     <div class="bg">
@@ -36,5 +35,5 @@ display: block;
     </div>
 
     <link rel="stylesheet" type="text/css" href="index.css">
-    <script src="index.js"></script>
+
 </body>
