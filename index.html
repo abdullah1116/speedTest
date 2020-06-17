@@ -1,13 +1,9 @@
 <head>
     <link rel="stylesheet" href="mybootstrap.css" />
-    <script src="index.js"></script>
+    <script src="jquery.js"></script>
+    
 </head>
 
-<div id="background" class="text-center">
-    <div id="spinnerborder">
-        <div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>
-    </div>
-</div>
 
 <body class="body">
     <div style="position: absolute; width: 100%;">
@@ -21,19 +17,20 @@
                 </div>
             </nav>
         </div>
-
+        
     </div>
-
-
+    
+    
     <div class="result_modal">
         <div style="font-size: 350%;float: left;" id="Result"></div>
     </div>
-
+    
     <div class="bg">
         <object class="object" id="ImageObject" onload="result()"></object>
         <img class="object" id="Imagenoload" onload="Imageonload()" style="display: block;">
     </div>
-
+    
     <link rel="stylesheet" type="text/css" href="index.css">
-
+    
 </body>
+<script src="index.js"></script>

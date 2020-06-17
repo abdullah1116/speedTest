@@ -1,3 +1,4 @@
+load();
 document.getElementById("background").style.display = "none"
 var t1,
     avgArray = [],
@@ -10,10 +11,13 @@ setTimeout(
         document.getElementById("showResult").textContent = "Wait..."
         t1 = performance.now()
         load()
+        result()
     }, 1000);
 
 function load() {
-    document.getElementById("ImageObject").data = "image.svg"
+    // document.getElementById("ImageObject").data = "image.svg"
+    $("#ImageObject")[0].data = "/Image.svg"
+    console.log('$("#ImageObject")[0].data = "/Image.svg"')
 }
 
 function result() {
@@ -44,5 +48,5 @@ function clearResult() {
 }
 
 function Imageonload() {
-    document.getElementById("ImageObject").data = ""
+    // document.getElementById("ImageObject").data = ""
 }
