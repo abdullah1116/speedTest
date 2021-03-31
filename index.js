@@ -11,7 +11,7 @@ function getResult() {
 }
 
 function load() {
-    $("#ImageObject")[0].data = "/Image.svg"
+    $("#ImageObject")[0].data = "./image.svg"
 }
 
 function result() {
